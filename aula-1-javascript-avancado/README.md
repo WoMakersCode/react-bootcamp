@@ -39,6 +39,26 @@ function job2() {
 }
 ```
 
+## Async Await - ex 1
+```
+function job() {
+    return new Promise(function(resolve, reject) {
+        setTimeout(resolve, 500, 'Hello world 1');
+    });
+}
+
+async function test() {
+    let message = await job();
+    console.log(message);
+
+    return 'Hello world 2';
+}
+
+test().then(function(message) {
+    console.log(message);
+});
+```
+
 # Desafios
 
 ### Desafio 1
@@ -70,13 +90,38 @@ function job() {
 
 Nesse código, sua função recebe um parâmetro. Você deve modificar o código abaixo com base nas seguintes regras:
 
-* Sua função deve sempre retornar uma promessa
-* Se os dados não forem um número, retorne uma promessa rejeitada instantaneamente e mostre o conteúdo do "erro"
-* Se os dados forem um número ímpar, retorne uma promessa resolvida 1 segundo depois e exiba a mensagem "ímpar"
-* Se os dados forem um número par, retorne uma promessa rejeitada 2 segundos depois e exiba a mensagem "par"
+* Sua função deve sempre retornar uma promise
+* Se os dados não forem um número, retorne uma promise rejeitada instantaneamente e mostre o conteúdo do "erro"
+* Se os dados forem um número ímpar, retorne uma promise resolvida 1 segundo depois e exiba a mensagem "ímpar"
+* Se os dados forem um número par, retorne uma promise rejeitada 2 segundos depois e exiba a mensagem "par"
 
 ```
 function job(data) {
     return something;
 }
+```
+
+### Desafio 4 
+
+O código a seguir usa promises para manipular um resultado assíncrono. O resultado é uma promise que gera um ID quando resolvido. Esse ID deve ser usado para recuperar informações do banco de dados. No final, sua função deve retornar a propriedade *name* da informação. Em caso de erro, você deve retornar uma promise rejeitada com o erro fornecido. Mas primeiro você deve notificar o errorManager com o erro.
+
+```
+function job(result, database, errorManager) {
+    return result
+
+    .then(function(id) {
+        return database.get(id);
+    })
+
+    .then(function(info) {
+        return info.name;
+    })
+
+    .catch(function(error) {
+        errorManager.notify(error);
+        throw error;
+    });
+}
+
+module.exports = job;
 ```
