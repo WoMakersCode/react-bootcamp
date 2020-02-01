@@ -103,8 +103,7 @@ function job(data) {
     return something;
 }
 ```
-
-[challenge](https://www.codingame.com/playgrounds/482/javascript-async-and-await-keywords/time-to-pratice)
+[challenge](https://www.codingame.com/playgrounds/347/javascript-promises-mastering-the-asynchronous/more-pratice-with-promises)
 
 ### Desafio 4 
 
@@ -130,3 +129,5 @@ function job(result, database, errorManager) {
 
 module.exports = job;
 ```
+
+[challenge](https://www.codingame.com/playgrounds/482/javascript-async-and-await-keywords/time-to-pratice)
