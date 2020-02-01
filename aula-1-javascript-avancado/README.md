@@ -32,6 +32,7 @@ function job1() {
 
 function job2() {
     return new Promise(function(resolve, reject) {
+
         setTimeout(function() {
             resolve('result of job 2');
         }, 1000);
@@ -74,6 +75,8 @@ function job(callback1, callback2) {
 }
 
 ```
+
+[challenge](https://www.codingame.com/playgrounds/347/javascript-promises-mastering-the-asynchronous/some-pratice)
 
 ### Desafio 2
 
