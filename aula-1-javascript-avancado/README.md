@@ -1,6 +1,6 @@
 # 1 - Javascript Avançado
 
-[slides] (https://docs.google.com/presentation/d/1EkLKA7qfpbH1Rc2lkl43h5BZ0X2Uv5O-uoEzc1Z1qKs/edit?usp=sharing)
+[slides](https://docs.google.com/presentation/d/1EkLKA7qfpbH1Rc2lkl43h5BZ0X2Uv5O-uoEzc1Z1qKs/edit?usp=sharing)
 
 ## Promises - Chaining
 ```
