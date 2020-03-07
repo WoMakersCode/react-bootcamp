@@ -7,7 +7,7 @@
 
 # Desafios para serem entregues
  - Formulário de cadastro de alunas, (os campos precisam estar validados, não pode dar submit sem preencher tudo)
-  [desafio](./aula-3-lets-input-reac)
+  [desafio](./aula-3-lets-input-react)
 
   - Formulário de CEP que preenche todos os campos quando a API responde o enredereço
-  [desafio](./aula-3-lets-input-reac/live/cep-api)
+  [desafio](./aula-3-lets-input-react/live/cep-api)
