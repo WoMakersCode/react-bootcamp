@@ -21,7 +21,7 @@
   [desafio](./aula-5-lets-hooks-it-all)
 
 
-# Demos início aos projetos finais
+# Projetos finais
 
 Abaixo estão os projetos finais do bootcamp, a turma foi dividida em 4 times e cada uma está gerenciando o projeto no github com práticas como abrir issues, pull requests e code review.
 Para acompanhar basta clicar nos repositórios abaixo
